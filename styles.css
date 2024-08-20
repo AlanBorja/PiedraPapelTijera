@@ -1,0 +1,100 @@
+body {
+    margin:0;
+    background-image:url(imagenes/desktop-wallpaper-rock-paper-scissors-rock-paper-scissors.jpg);
+    background-size:cover;
+}
+
+.box {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.titulo {
+    background-size: cover;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.box2 {
+    display: flex;
+    justify-content:space-around;
+}
+
+.boton{
+    flex-direction: row;
+    width: 10dvw;
+    height: 10dvh;
+    margin: 9dvw;
+    font-family:  sans-serif;
+    border-radius: 16px;
+    color: white;
+    overflow: hidden;
+}
+
+.boton:first-child {
+    background-image: url(imagenes/3.png);
+    background-size:cover;
+    background-position: center;
+}
+
+.boton:nth-child(2) {
+    background-image: url(imagenes/2.png);
+    background-size:cover;
+    background-position: center;   
+}
+.boton:last-child{
+    background-image: url(imagenes/1.png);
+    background-size:cover;
+    background-position: center;
+}
+
+.boton:hover{
+    color: rgb(35, 53, 56);
+    animation: zoom 2s both;
+}
+
+.Record {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 50dvw;
+    height: 7dvh;
+    color: rgb(252, 252, 252);
+}
+
+.DivisorOponente {
+    display: flex;
+    justify-content: center;
+}
+
+.pcCHoice {
+    display: flex;
+    justify-content: center;
+    margin-top: 3dvh;
+    color: rgb(214, 214, 214);
+}
+
+.ImagenEnemigo {
+    display: flex;
+    margin-left: 2dvw;
+    height: 10dvh;
+    width: 10dvw;
+    border-radius: 8px;
+}
+
+.Resultado{
+    display: flex;
+    justify-content: center;
+}
+
+.Resultado {
+    color: rgba(255, 255, 255, 0.678);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+@keyframes zoom {
+    from {
+        background-size: 100%;
+    }
+    to {
+        background-size: 200%;
+    }
+} 
